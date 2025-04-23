@@ -10,23 +10,28 @@
 body {
   font-family: "Nanum Myeongjo", serif;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   height: 100vh;
-  padding-left: 50px;
+  margin: 0;
+  padding: 20px 15px;
+  box-sizing: border-box;
 }
 
 #weather,
 .login-todo__container,
 .date-time__container {
-  width: 100%;
-  margin: 150px;
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
   transform: translateX(25px);
 }
 
 #weather {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-start;
   white-space: nowrap;
   margin-top: var(--margin-top__50px);
@@ -49,7 +54,7 @@ body {
   padding: var(--padding-normal);
   font-size: var(--font-size__L);
   color: var(--font-color__def);
-  width: 400px;
+  max-width: 400px;
 }
 
 #login-form {
@@ -68,7 +73,7 @@ body {
 
 #login-form h3 {
   font-size: var(--font-size__L);
-  width: 600px;
+  width: 100%;
 }
 
 #login-form input {
